@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Vinculamos el archivo JS-->
     <script src="Practico5.js"></script>
     <title>MASCOTAS</title>
-    
 </head>
 <body>
-    <h1>MASCOTAS</h1>
+    <h1>Bienvenido al refugio de Mascotas</h1>
+    <div><h2>Conoce nuestro hogar</h2></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4645.472270790452!2d-58.40616506507435!3d-34.58278973652861!2m3!
+    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb51c78a87005%3A0x40b0d058ae47ad45!2sMascotas%20en%20Adopci%C3%B3n%20Argentina!5e
+    0!3m2!1ses!2sar!4v1763945741236!5m2!1ses!2sar"width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=
+    "no-referrer-when-downgrade"></iframe>
+<br>
+<h3>Visitanos!</h3>
+    <div><h2>Adopta una mascota</h2></div>
+    <label for="animales">Animales rescatados</label>
+            <select name="animales" id="animales">
+                <option value="" selected>Selecciona una mascota</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Conejo">Conejo</option>
+            </select>
+    <div><h2>Colabora con nosotros</h2></div>
+    
+    <label for="Colaboracion">¿Cómo te gustaría colaborar?: </label>
+    <br>
+
+    <input type="checkbox" id="alimentos" name="alimentos" value="alimentos">
+    <label for="alimentos">Alimentos</label>
+    <input type="checkbox" id="dinero" name="dinero" value="dinero">
+    <label for="dinero">Ayuda monetaria</label>
+    <input type="checkbox" id="Hogar de transito" name="hogar" value="hogar">
+    <label for="hogar">Hogar de tránsito</label>
+    <button type="submit">Confirmar</button>
     <script src="Practico5.js"></script>
+    
+   <h1>Se parte de nuestra comunidad</h1>
+     <form method="post" enctype="multipart/form-data" id="formulario2" action="index.js" autocomplete="off">
+    <legend>
+     Datos Personales
+    </legend>
+
+    <label for="nombre">¿Cómo te llamas?: </label>
+    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="30" placeholder="Scooby Doo" required>
+            
+<br>
+
+<label for="edad">¿Cuál es tu edad?: </label>
+<input type="number" id="edad" min="1" max="100" placeholder="21"  required>
+
+<br>
+
+<label for="contacto">Dejanos un mail de contacto:</label>
+<input type="email" id="contacto" name="contacto" placeholder="adoptantesdelcampito@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+<br>  
+<button type="submit">Enviar datos</button>
 </body>
+
+    
+
+<footer>    
+<a href="mailto:contacto@ejemplo.com">Contactar por correo</a>
+</footer>
 </html>
